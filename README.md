@@ -107,7 +107,7 @@ pip install -r requirements.txt
 1. 克隆仓库
 
 ```bash
-git clone https://github.com/yourname/exp4-taxi-traffic-prediction.git
+git clone [https://github.com/yourname/exp4-taxi-traffic-prediction.git](https://github.com/RestRegular/exp4-taxi-traffic-prediction.git)
 cd exp4-taxi-traffic-prediction
 ```
 
