@@ -1,0 +1,1026 @@
+(venv) PS D:\repositories\Roal\examples> python .\traffic_big_data.py
+Pipeline 'traffic_big_data_processor' 已构建:
+  - 数据目录: D:\文件\临时文件\交通大数据\gps_datas
+  - 输出文件: D:\repositories\Roal\examples\traffic_big_data_output.csv
+  - 网格大小: 0.01°
+  - 时间间隔: 15 分钟
+
+开始处理数据...
+2026-04-18T04:43:20.591826Z [info     ] Map tasks: ['file_scanner', 'file_data_loader', 'data_processor', 'grid_assigner'] logger_level=global
+2026-04-18T04:43:20.591826Z [info     ] 开始扫描目录: D:\文件\临时文件\交通大数据\gps_datas logger_level=local pipeline_id=traffic_big_data_processor task_name=file_scanner
+2026-04-18T04:43:20.600006Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_001.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:43:36.136524Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_001.TXT, 共 242199 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:43:36.137027Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_005.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:43:52.604638Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_005.TXT, 共 242000 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:43:52.606148Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_009.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:44:14.654511Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_009.TXT, 共 241586 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:44:14.655512Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_013.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:44:59.633980Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_013.TXT, 共 240161 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:44:59.633980Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_017.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:45:40.808486Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_017.TXT, 共 239836 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:45:40.808486Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_021.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:46:20.997024Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_021.TXT, 共 237864 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:46:20.997024Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_025.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:47:03.267961Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_025.TXT, 共 237114 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:47:03.267961Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_029.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:47:40.149400Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_029.TXT, 共 236306 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:47:40.149902Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_033.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:48:26.553763Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_033.TXT, 共 234903 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:48:26.553763Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_037.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:49:01.803259Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_037.TXT, 共 234165 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:49:01.803259Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_041.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:49:37.169141Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_041.TXT, 共 232694 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:49:37.169141Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_045.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:50:19.693502Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_045.TXT, 共 232059 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:50:19.694007Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_049.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:50:56.725150Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_049.TXT, 共 231382 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:50:56.726151Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_053.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:51:39.650532Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_053.TXT, 共 231350 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:51:39.651041Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_057.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:52:19.420571Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_057.TXT, 共 232195 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:52:19.420571Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_061.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:53:05.132652Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_061.TXT, 共 232443 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:53:05.132652Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_065.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:53:40.506239Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_065.TXT, 共 232945 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:53:40.506239Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_069.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:54:23.117002Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_069.TXT, 共 233369 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:54:23.117002Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_073.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:54:58.676624Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_073.TXT, 共 234219 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:54:58.676624Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_077.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:55:40.196462Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_077.TXT, 共 235815 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:55:40.197465Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_081.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:56:17.145627Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_081.TXT, 共 236590 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:56:17.145627Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_085.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:57:01.415327Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_085.TXT, 共 239663 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:57:01.415327Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_089.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:57:42.855322Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_089.TXT, 共 240391 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:57:42.855322Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_093.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:58:21.539794Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_093.TXT, 共 240985 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:58:21.539794Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_097.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:59:04.452557Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_097.TXT, 共 241048 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:59:04.452557Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_101.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:59:40.886824Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_101.TXT, 共 240976 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T04:59:40.886824Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_105.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:00:23.096026Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_105.TXT, 共 241246 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:00:23.096026Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_109.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:01:05.851744Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_109.TXT, 共 241791 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:01:05.852743Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_113.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:01:42.613006Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_113.TXT, 共 241611 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:01:42.613006Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_117.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:02:24.944661Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_117.TXT, 共 241520 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:02:24.945662Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_121.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:03:01.934588Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_121.TXT, 共 241877 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:03:01.935589Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_125.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:03:44.943655Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_125.TXT, 共 241958 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:03:44.943655Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_129.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:04:30.021030Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_129.TXT, 共 241638 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:04:30.021030Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_133.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:05:06.771304Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_133.TXT, 共 241106 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:05:06.771304Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_137.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:05:48.957198Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_137.TXT, 共 241592 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:05:48.957701Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_141.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:06:31.440387Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_141.TXT, 共 241565 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:06:31.440387Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_145.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:07:09.731929Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_145.TXT, 共 242028 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:07:09.731929Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_149.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:07:52.325852Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_149.TXT, 共 241148 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:07:52.325852Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_153.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:08:27.521254Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_153.TXT, 共 241273 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:08:27.521758Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_157.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:09:08.501249Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_157.TXT, 共 242242 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:09:08.502249Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_161.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:09:43.318857Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_161.TXT, 共 241371 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:09:43.318857Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_165.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:10:24.933707Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_165.TXT, 共 241722 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:10:24.933707Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_169.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:10:59.384756Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_169.TXT, 共 241906 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:10:59.384756Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_173.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:11:40.346626Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_173.TXT, 共 241787 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:11:40.346626Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_177.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:12:21.543243Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_177.TXT, 共 241448 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:12:21.543243Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_181.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:12:55.742902Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_181.TXT, 共 241669 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:12:55.742902Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_185.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:13:36.902478Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_185.TXT, 共 240965 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:13:36.902478Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_189.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:14:16.938735Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_189.TXT, 共 241054 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:14:16.938735Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_193.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:14:52.374232Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_193.TXT, 共 241834 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:14:52.374232Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_197.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:15:33.501600Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_197.TXT, 共 242511 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:15:33.501600Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_201.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:16:08.252543Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_201.TXT, 共 241368 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:16:08.252543Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_205.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:16:49.984245Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_205.TXT, 共 241397 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:16:49.984245Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_209.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:17:31.049716Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_209.TXT, 共 241531 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:17:31.049716Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_213.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:18:05.959901Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_213.TXT, 共 241179 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:18:05.960896Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_217.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:18:47.371406Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_217.TXT, 共 241222 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:18:47.371406Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_221.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:19:21.809862Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_221.TXT, 共 241874 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:19:21.810860Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_225.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:20:03.288239Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_225.TXT, 共 241432 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:20:03.289239Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_229.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:20:44.601379Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_229.TXT, 共 241264 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:20:44.602378Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_233.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:21:19.003530Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_233.TXT, 共 241243 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:21:19.003530Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_237.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:21:59.688883Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_237.TXT, 共 240907 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:21:59.688883Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_241.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:22:35.371619Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_241.TXT, 共 241434 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:22:35.371619Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_245.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:23:17.168923Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_245.TXT, 共 242000 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:23:17.168923Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_249.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:23:51.898679Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_249.TXT, 共 242126 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:23:51.898679Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_253.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:24:33.607600Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_253.TXT, 共 242446 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:24:33.607600Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_257.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:25:16.638295Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_257.TXT, 共 242585 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:25:16.638295Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_261.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:25:58.779246Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_261.TXT, 共 243007 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:25:58.779246Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_265.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:26:36.284748Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_265.TXT, 共 243514 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:26:36.284748Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_269.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:27:19.250429Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_269.TXT, 共 241972 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:27:19.250429Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_273.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:27:55.232978Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_273.TXT, 共 242107 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:27:55.232978Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_277.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:28:36.517246Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_277.TXT, 共 242656 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:28:36.517246Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_281.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:29:12.825391Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_281.TXT, 共 242010 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:29:12.825391Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_285.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:29:55.979217Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\01\20170301_285.TXT, 共 242826 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:29:55.979217Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_001.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:30:32.380428Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_001.TXT, 共 241816 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:30:32.380428Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_005.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:31:14.009435Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_005.TXT, 共 241968 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:31:14.009435Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_009.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:31:56.290999Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_009.TXT, 共 241195 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:31:56.290999Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_013.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:32:33.085214Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_013.TXT, 共 240702 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:32:33.085214Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_017.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:33:16.026441Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_017.TXT, 共 239450 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:33:16.026441Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_021.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:33:51.527481Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_021.TXT, 共 238326 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:33:51.527481Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_025.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:34:33.666491Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_025.TXT, 共 237561 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:34:33.666491Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_029.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:35:15.260401Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_029.TXT, 共 235902 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:35:15.260401Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_033.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:35:51.456399Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_033.TXT, 共 235080 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:35:51.456399Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_037.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:36:26.829652Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_037.TXT, 共 234627 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:36:26.829652Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_041.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:37:08.721094Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_041.TXT, 共 233392 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:37:08.721094Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_045.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:37:44.461380Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_045.TXT, 共 232444 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:37:44.461380Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_049.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:38:25.267810Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_049.TXT, 共 232954 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:38:25.267810Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_053.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:39:00.049179Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_053.TXT, 共 232216 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:39:00.049179Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_057.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:39:40.697001Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_057.TXT, 共 232310 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:39:40.697001Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_061.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:40:15.723000Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_061.TXT, 共 232360 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:40:15.724004Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_065.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:40:56.533016Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_065.TXT, 共 233376 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:40:56.534016Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_069.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:41:31.032104Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_069.TXT, 共 233697 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:41:31.032104Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_073.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:42:12.005179Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_073.TXT, 共 234831 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:42:12.005179Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_077.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:42:52.703682Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_077.TXT, 共 236250 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:42:52.703682Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_081.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:43:27.603689Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_081.TXT, 共 237584 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:43:27.604693Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_085.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:44:09.452895Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_085.TXT, 共 238997 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:44:09.452895Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_089.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:44:45.082875Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_089.TXT, 共 240763 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:44:45.082875Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_093.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:45:26.824171Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_093.TXT, 共 240375 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:45:26.824171Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_097.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:46:02.350521Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_097.TXT, 共 240247 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:46:02.350521Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_101.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:46:37.486881Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_101.TXT, 共 240815 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:46:37.486881Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_105.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:47:17.922096Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_105.TXT, 共 240801 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:47:17.922096Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_109.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:47:59.744787Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_109.TXT, 共 240886 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:47:59.744787Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_113.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:48:42.206415Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_113.TXT, 共 241586 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:48:42.206923Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_117.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:49:25.373386Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_117.TXT, 共 240970 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:49:25.373386Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_121.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:50:01.384767Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_121.TXT, 共 241061 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:50:01.384767Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_125.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:50:48.268906Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_125.TXT, 共 241208 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:50:48.268906Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_129.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:51:31.445515Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_129.TXT, 共 240943 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:51:31.445515Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_133.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:52:08.122222Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_133.TXT, 共 241297 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:52:08.122222Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_137.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:52:52.472189Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_137.TXT, 共 241348 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:52:52.472189Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_141.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:53:28.791980Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_141.TXT, 共 241355 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:53:28.791980Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_145.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:54:15.846506Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_145.TXT, 共 240875 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:54:15.847506Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_149.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:55:02.769331Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_149.TXT, 共 240960 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:55:02.769331Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_153.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:55:38.645190Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_153.TXT, 共 241115 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:55:38.645190Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_157.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:56:20.866693Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_157.TXT, 共 241001 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:56:20.866693Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_161.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:57:03.524025Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_161.TXT, 共 241875 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:57:03.525025Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_165.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:57:39.055751Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_165.TXT, 共 241699 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:57:39.055751Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_169.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:58:18.910117Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_169.TXT, 共 241720 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:58:18.911067Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_173.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:58:58.793912Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_173.TXT, 共 241564 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:58:58.793912Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_177.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:59:33.245658Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_177.TXT, 共 241968 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T05:59:33.245658Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_181.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:00:13.326536Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_181.TXT, 共 242197 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:00:13.327620Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_185.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:00:52.347547Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_185.TXT, 共 241722 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:00:52.347547Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_189.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:01:32.271161Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_189.TXT, 共 241905 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:01:32.271161Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_193.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:02:06.687875Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_193.TXT, 共 242023 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:02:06.688876Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_197.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:02:47.534280Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_197.TXT, 共 242153 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:02:47.539784Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_201.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:03:20.916415Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_201.TXT, 共 243178 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:03:20.916908Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_205.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:04:00.613169Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_205.TXT, 共 242889 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:04:00.613169Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_209.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:04:40.578024Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_209.TXT, 共 241131 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:04:40.578024Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_213.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:05:20.807611Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_213.TXT, 共 240986 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:05:20.807611Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_217.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:05:54.978021Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_217.TXT, 共 241122 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:05:54.979022Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_221.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:06:34.684444Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_221.TXT, 共 241630 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:06:34.684444Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_225.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:07:08.755651Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_225.TXT, 共 241807 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:07:08.755651Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_229.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:07:49.429617Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_229.TXT, 共 242080 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:07:49.429617Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_233.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:08:29.209256Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_233.TXT, 共 241999 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:08:29.209256Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_237.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:09:02.824341Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_237.TXT, 共 241741 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:09:02.825342Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_241.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:09:42.188497Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_241.TXT, 共 241864 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:09:42.188497Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_245.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:10:22.968163Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_245.TXT, 共 242241 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:10:22.968163Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_249.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:10:56.757753Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_249.TXT, 共 241365 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:10:56.757753Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_253.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:11:35.987030Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_253.TXT, 共 239556 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:11:35.987030Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_257.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:12:15.379150Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_257.TXT, 共 243257 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:12:15.379150Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_261.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:12:49.681694Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_261.TXT, 共 243682 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:12:49.681694Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_265.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:13:28.472524Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_265.TXT, 共 243127 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:13:28.473525Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_269.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:14:08.212563Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_269.TXT, 共 242386 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:14:08.212563Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_273.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:14:42.085678Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_273.TXT, 共 242484 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:14:42.085678Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_277.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:15:21.581432Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_277.TXT, 共 243216 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:15:21.581432Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_281.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:15:56.502349Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_281.TXT, 共 242515 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:15:56.502349Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_285.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:16:36.311650Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\02\20170302_285.TXT, 共 242234 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:16:36.312652Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_001.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:17:10.690114Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_001.TXT, 共 242820 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:17:10.690114Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_005.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:17:49.859994Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_005.TXT, 共 242881 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:17:49.859994Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_009.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:18:29.396602Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_009.TXT, 共 242180 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:18:29.396602Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_013.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:19:03.409842Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_013.TXT, 共 240764 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:19:03.409842Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_017.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:19:42.967210Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_017.TXT, 共 240125 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:19:42.967210Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_021.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:20:16.134087Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_021.TXT, 共 239504 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:20:16.134087Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_025.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:20:55.865813Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_025.TXT, 共 238016 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:20:55.866814Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_029.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:21:34.659717Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_029.TXT, 共 236795 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:21:34.659717Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_033.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:22:07.528021Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_033.TXT, 共 235814 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:22:07.528021Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_037.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:22:40.964972Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_037.TXT, 共 234531 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:22:40.965972Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_041.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:23:19.680464Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_041.TXT, 共 234294 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:23:19.680464Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_045.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:23:53.288085Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_045.TXT, 共 234011 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:23:53.289171Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_049.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:24:31.249871Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_049.TXT, 共 233087 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:24:31.249871Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_053.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:25:09.844098Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_053.TXT, 共 232676 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:25:09.844098Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_057.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:25:42.340025Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_057.TXT, 共 233053 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:25:42.341029Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_061.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:26:21.836315Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_061.TXT, 共 232716 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:26:21.836315Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_065.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:26:54.730961Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_065.TXT, 共 233377 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:26:54.730961Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_069.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:27:33.217320Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_069.TXT, 共 233919 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:27:33.217320Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_073.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:28:06.975121Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_073.TXT, 共 235106 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:28:06.975943Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_077.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:28:46.177039Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_077.TXT, 共 236456 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:28:46.177039Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_081.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:29:19.818021Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_081.TXT, 共 238562 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:29:19.818021Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_085.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:29:59.064725Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_085.TXT, 共 240763 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:29:59.064725Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_089.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:30:32.755020Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_089.TXT, 共 241488 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:30:32.755020Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_093.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:31:11.579385Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_093.TXT, 共 241747 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:31:11.579385Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_097.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:31:51.816815Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_097.TXT, 共 241731 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:31:51.816815Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_101.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:32:24.943330Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_101.TXT, 共 241178 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:32:24.943330Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_105.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:33:04.937257Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_105.TXT, 共 242147 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:33:04.938224Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_109.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:33:38.314912Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_109.TXT, 共 242491 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:33:38.314912Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_113.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:34:18.879326Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_113.TXT, 共 242381 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:34:18.879326Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_117.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:34:52.269552Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_117.TXT, 共 242624 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:34:52.269552Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_121.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:35:31.502510Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_121.TXT, 共 241710 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:35:31.502510Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_125.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:36:11.777225Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_125.TXT, 共 242622 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:36:11.777225Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_129.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:36:50.942479Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_129.TXT, 共 242013 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:36:50.943217Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_133.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:37:25.551495Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_133.TXT, 共 242691 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:37:25.551495Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_137.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:38:05.090430Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_137.TXT, 共 242612 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:38:05.091285Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_141.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:38:39.211185Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_141.TXT, 共 241926 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:38:39.211185Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_145.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:39:19.219915Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_145.TXT, 共 242254 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:39:19.219915Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_149.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:39:52.488494Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_149.TXT, 共 242073 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:39:52.488904Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_153.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:40:31.806543Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_153.TXT, 共 242612 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:40:31.806543Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_157.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:41:11.320674Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_157.TXT, 共 243165 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:41:11.320674Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_161.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:41:45.790163Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_161.TXT, 共 242744 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:41:45.790163Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_165.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:42:25.684005Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_165.TXT, 共 243068 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:42:25.685369Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_169.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:43:05.695512Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_169.TXT, 共 242850 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:43:05.695512Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_173.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:43:38.672551Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_173.TXT, 共 242301 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:43:38.672551Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_177.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:44:18.518830Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_177.TXT, 共 242094 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:44:18.518830Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_181.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:44:58.186979Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_181.TXT, 共 242578 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:44:58.186979Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_185.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:45:32.025716Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_185.TXT, 共 242361 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:45:32.025716Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_189.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:46:11.626617Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_189.TXT, 共 242166 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:46:11.626617Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_193.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:46:50.074102Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_193.TXT, 共 242236 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:46:50.075260Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_197.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:47:30.645070Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_197.TXT, 共 242610 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:47:30.645070Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_201.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:48:04.181196Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_201.TXT, 共 243160 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:48:04.181196Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_205.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:48:44.096614Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_205.TXT, 共 243649 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:48:44.096614Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_209.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:49:17.716772Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_209.TXT, 共 241729 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:49:17.716772Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_213.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:49:56.950834Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_213.TXT, 共 241669 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:49:56.951835Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_217.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:50:31.154335Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_217.TXT, 共 241745 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:50:31.154335Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_221.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:51:10.162829Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_221.TXT, 共 241764 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:51:10.164262Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_225.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:51:50.454545Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_225.TXT, 共 241545 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:51:50.454545Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_229.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:52:24.257895Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_229.TXT, 共 242017 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:52:24.257895Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_233.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:53:04.228884Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_233.TXT, 共 241392 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:53:04.229884Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_237.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:53:37.687371Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_237.TXT, 共 241645 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:53:37.687371Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_241.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:54:17.391949Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_241.TXT, 共 241437 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:54:17.391949Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_245.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:54:56.505148Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_245.TXT, 共 241592 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:54:56.505148Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_249.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:55:36.422102Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_249.TXT, 共 241725 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:55:36.423102Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_253.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:56:10.578715Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_253.TXT, 共 241501 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:56:10.579715Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_257.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:56:50.232714Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_257.TXT, 共 243230 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:56:50.232714Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_261.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:57:23.644760Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_261.TXT, 共 243105 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:57:23.644760Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_265.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:58:02.464644Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_265.TXT, 共 243125 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:58:02.464644Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_269.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:58:42.603913Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_269.TXT, 共 243381 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:58:42.603913Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_273.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:59:16.222655Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_273.TXT, 共 243312 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:59:16.222655Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_277.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:59:55.236489Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_277.TXT, 共 243676 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T06:59:55.236489Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_281.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:00:35.305360Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_281.TXT, 共 243753 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:00:35.306514Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_285.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:01:08.658335Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\03\20170303_285.TXT, 共 243908 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:01:08.658335Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_001.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:01:48.580858Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_001.TXT, 共 244878 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:01:48.580858Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_005.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:02:27.523426Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_005.TXT, 共 244244 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:02:27.523426Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_009.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:03:07.498510Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_009.TXT, 共 243676 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:03:07.498510Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_013.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:03:42.027014Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_013.TXT, 共 243293 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:03:42.027014Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_017.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:04:21.204510Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_017.TXT, 共 242401 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:04:21.204510Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_021.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:04:55.382509Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_021.TXT, 共 241624 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:04:55.382509Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_025.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:05:34.580370Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_025.TXT, 共 240372 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:05:34.580370Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_029.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:06:14.126535Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_029.TXT, 共 239128 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:06:14.126535Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_033.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:06:47.587486Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_033.TXT, 共 237932 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:06:47.587486Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_037.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:07:20.826892Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_037.TXT, 共 236640 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:07:20.826892Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_041.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:07:59.103761Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_041.TXT, 共 235579 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:07:59.103761Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_045.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:08:38.649113Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_045.TXT, 共 234229 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:08:38.650113Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_049.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:09:12.209989Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_049.TXT, 共 233514 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:09:12.209989Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_053.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:09:51.681339Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_053.TXT, 共 233615 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:09:51.681339Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_057.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:10:25.581785Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_057.TXT, 共 233300 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:10:25.581785Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_061.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:11:04.311196Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_061.TXT, 共 233550 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:11:04.311196Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_065.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:11:37.412323Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_065.TXT, 共 233283 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:11:37.413324Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_069.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:12:17.297943Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_069.TXT, 共 233838 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:12:17.297943Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_073.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:12:56.691262Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_073.TXT, 共 235661 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:12:56.691262Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_077.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:13:29.678876Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_077.TXT, 共 235969 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:13:29.678876Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_081.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:14:09.429663Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_081.TXT, 共 237276 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:14:09.429663Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_085.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:14:42.088344Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_085.TXT, 共 238662 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:14:42.088344Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_089.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:15:21.226311Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_089.TXT, 共 240283 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:15:21.227355Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_093.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:16:00.977594Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_093.TXT, 共 241829 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:16:00.977594Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_097.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:16:34.559820Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_097.TXT, 共 242599 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:16:34.559820Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_101.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:17:14.651541Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_101.TXT, 共 243145 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:17:14.651541Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_105.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:17:48.403809Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_105.TXT, 共 243085 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:17:48.403809Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_109.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:18:28.161678Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_109.TXT, 共 243493 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:18:28.161678Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_113.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:19:02.410786Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_113.TXT, 共 242991 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:19:02.410786Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_117.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:19:42.210345Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_117.TXT, 共 243523 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:19:42.210345Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_121.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:20:21.652509Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_121.TXT, 共 242609 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:20:21.652509Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_125.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:21:01.841265Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_125.TXT, 共 243027 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:21:01.841265Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_129.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:21:36.044476Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_129.TXT, 共 241696 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:21:36.044476Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_133.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:22:16.423396Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_133.TXT, 共 242673 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:22:16.423396Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_137.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:22:51.750106Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_137.TXT, 共 242332 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:22:51.750106Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_141.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:23:33.878997Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_141.TXT, 共 242468 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:23:33.878997Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_145.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:24:11.029961Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_145.TXT, 共 241946 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:24:11.029961Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_149.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:24:52.942084Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_149.TXT, 共 242453 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:24:52.942084Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_153.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:25:35.255782Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_153.TXT, 共 242171 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:25:35.256364Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_157.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:26:12.051668Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_157.TXT, 共 242219 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:26:12.051668Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_161.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:26:54.764381Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_161.TXT, 共 242151 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:26:54.764381Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_165.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:27:32.543659Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_165.TXT, 共 241798 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:27:32.543659Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_169.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:28:15.311542Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_169.TXT, 共 242814 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:28:15.311542Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_173.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:28:57.594334Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_173.TXT, 共 241763 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:28:57.594334Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_177.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:29:34.395903Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_177.TXT, 共 242357 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:29:34.395903Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_181.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:30:17.490021Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_181.TXT, 共 242710 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:30:17.491021Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_185.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:30:54.303855Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_185.TXT, 共 241605 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:30:54.303855Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_189.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:31:37.149834Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_189.TXT, 共 242268 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:31:37.149834Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_193.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:32:11.845471Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_193.TXT, 共 242643 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:32:11.845471Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_197.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:32:54.763100Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_197.TXT, 共 243320 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:32:54.763100Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_201.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:33:30.762315Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_201.TXT, 共 243515 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:33:30.762315Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_205.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:34:13.409506Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_205.TXT, 共 243805 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:34:13.410507Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_209.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:34:56.353580Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_209.TXT, 共 242609 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:34:56.353580Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_213.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:35:38.288026Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_213.TXT, 共 242404 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:35:38.288026Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_217.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:36:18.732229Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_217.TXT, 共 242142 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:36:18.732229Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_221.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:37:08.061902Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_221.TXT, 共 242439 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:37:08.061902Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_225.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:37:46.040869Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_225.TXT, 共 242484 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:37:46.040869Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_229.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:38:29.076137Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_229.TXT, 共 241897 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:38:29.076137Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_233.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:39:11.804774Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_233.TXT, 共 242435 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:39:11.804774Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_237.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:39:52.860171Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_237.TXT, 共 241865 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:39:52.861219Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_241.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:40:28.966424Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_241.TXT, 共 241925 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:40:28.966424Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_245.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:41:10.847059Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_245.TXT, 共 242235 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:41:10.848060Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_249.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:41:46.523637Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_249.TXT, 共 242309 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:41:46.523637Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_253.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:42:28.304608Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_253.TXT, 共 243266 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:42:28.304608Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_257.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:43:09.919452Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_257.TXT, 共 242974 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:43:09.919452Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_261.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:43:45.541037Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_261.TXT, 共 242769 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:43:45.541037Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_265.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:44:27.538436Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_265.TXT, 共 243459 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:44:27.539438Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_269.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:45:10.170154Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_269.TXT, 共 242005 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:45:10.170154Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_273.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:45:45.818456Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_273.TXT, 共 242854 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:45:45.818456Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_277.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:46:27.786812Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_277.TXT, 共 243938 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:46:27.786812Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_281.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:47:06.625524Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_281.TXT, 共 243833 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:47:06.625524Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_285.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:47:48.017790Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\04\20170304_285.TXT, 共 243219 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:47:48.017790Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_001.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:48:23.919562Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_001.TXT, 共 243832 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:48:23.919562Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_005.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:49:04.597318Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_005.TXT, 共 243649 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:49:04.597318Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_009.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:49:46.345486Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_009.TXT, 共 242976 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:49:46.346486Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_013.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:50:23.505292Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_013.TXT, 共 242354 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:50:23.505292Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_017.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:51:05.360727Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_017.TXT, 共 241389 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:51:05.360727Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_021.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:51:41.898540Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_021.TXT, 共 240570 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:51:41.898540Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_025.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:52:24.165108Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_025.TXT, 共 239811 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:52:24.165108Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_029.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:53:07.250383Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_029.TXT, 共 239216 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:53:07.250383Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_033.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:53:44.572533Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_033.TXT, 共 237756 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:53:44.572533Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_037.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:54:26.710827Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_037.TXT, 共 236172 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:54:26.710827Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_041.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:55:02.216994Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_041.TXT, 共 235033 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:55:02.216994Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_045.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:55:43.732618Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_045.TXT, 共 234676 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:55:43.732618Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_049.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:56:18.400560Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_049.TXT, 共 233973 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:56:18.400560Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_053.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:56:59.522144Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_053.TXT, 共 233329 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:56:59.522144Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_057.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:57:42.620577Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_057.TXT, 共 232832 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:57:42.620577Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_061.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:58:28.450808Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_061.TXT, 共 233033 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:58:28.450808Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_065.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:59:13.013947Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_065.TXT, 共 232608 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:59:13.013947Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_069.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:59:48.479516Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_069.TXT, 共 233996 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T07:59:48.479516Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_073.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:00:32.937512Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_073.TXT, 共 234518 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:00:32.937512Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_077.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:01:08.471539Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_077.TXT, 共 235329 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:01:08.471539Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_081.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:01:50.977929Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_081.TXT, 共 236610 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:01:50.977929Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_085.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:02:43.150771Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_085.TXT, 共 237704 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:02:43.151274Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_089.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:03:25.194338Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_089.TXT, 共 239317 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:03:25.194338Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_093.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:04:07.979439Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_093.TXT, 共 240383 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:04:07.979439Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_097.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:04:49.607064Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_097.TXT, 共 242034 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:04:49.607064Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_101.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:05:32.581744Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_101.TXT, 共 242537 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:05:32.581744Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_105.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:06:14.462574Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_105.TXT, 共 242568 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:06:14.462574Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_109.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:06:57.360045Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_109.TXT, 共 242340 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:06:57.360045Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_113.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:07:34.261150Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_113.TXT, 共 243056 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:07:34.261150Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_117.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:08:14.919311Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_117.TXT, 共 242633 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:08:14.919311Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_121.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:09:05.658483Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_121.TXT, 共 242429 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:09:05.662675Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_125.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:09:49.084232Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_125.TXT, 共 242253 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:09:49.084232Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_129.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:10:31.530875Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_129.TXT, 共 242842 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:10:31.531875Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_133.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:11:07.964396Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_133.TXT, 共 241819 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:11:07.964396Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_137.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:11:45.361964Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_137.TXT, 共 242261 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:11:45.361964Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_141.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:12:27.882373Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_141.TXT, 共 242258 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:12:27.882373Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_145.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:13:11.111696Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_145.TXT, 共 241794 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:13:11.111696Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_149.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:13:46.508015Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_149.TXT, 共 241620 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:13:46.508015Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_153.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:14:28.944418Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_153.TXT, 共 240765 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:14:28.944418Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_157.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:15:10.290116Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_157.TXT, 共 242301 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:15:10.290116Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_161.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:15:47.143840Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_161.TXT, 共 241559 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:15:47.144841Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_165.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:16:30.309833Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_165.TXT, 共 241917 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:16:30.310834Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_169.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:17:05.046328Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_169.TXT, 共 241782 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:17:05.046328Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_173.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:17:46.442296Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_173.TXT, 共 241432 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:17:46.442296Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_177.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:18:20.722305Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_177.TXT, 共 241976 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:18:20.723644Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_181.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:19:00.555037Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_181.TXT, 共 242336 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:19:00.555037Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_185.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:19:40.699981Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_185.TXT, 共 241854 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:19:40.699981Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_189.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:20:24.855194Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_189.TXT, 共 241670 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:20:24.855194Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_193.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:21:01.724133Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_193.TXT, 共 242006 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:21:01.724133Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_197.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:21:43.345801Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_197.TXT, 共 242176 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:21:43.346802Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_201.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:22:24.685021Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_201.TXT, 共 241716 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:22:24.685021Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_205.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:23:00.992039Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_205.TXT, 共 241768 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:23:00.992039Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_209.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:23:43.628604Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_209.TXT, 共 242772 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:23:43.629604Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_213.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:24:27.080572Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_213.TXT, 共 242463 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:24:27.080572Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_217.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:25:06.634999Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_217.TXT, 共 242515 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:25:06.634999Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_221.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:25:42.869180Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_221.TXT, 共 241963 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:25:42.869180Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_225.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:26:23.637303Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_225.TXT, 共 241955 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:26:23.637303Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_229.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:27:06.421439Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_229.TXT, 共 241726 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:27:06.421439Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_233.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:27:52.494615Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_233.TXT, 共 241636 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:27:52.494615Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_237.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:28:45.676353Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_237.TXT, 共 242727 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:28:45.676353Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_241.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:29:30.837129Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_241.TXT, 共 242266 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:29:30.838130Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_245.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:30:33.407798Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_245.TXT, 共 242550 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:30:33.407798Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_249.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:31:26.744873Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_249.TXT, 共 242696 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:31:26.744873Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_253.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:32:13.352287Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_253.TXT, 共 243400 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:32:13.352287Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_257.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:33:00.153776Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_257.TXT, 共 242482 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:33:00.153776Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_261.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:33:49.702299Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_261.TXT, 共 242888 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:33:49.702299Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_265.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:34:31.786082Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_265.TXT, 共 243184 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:34:31.786082Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_269.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:35:21.443224Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_269.TXT, 共 243170 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:35:21.444224Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_273.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:36:08.137678Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_273.TXT, 共 243177 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:36:08.138958Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_277.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:36:47.113184Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_277.TXT, 共 242870 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:36:47.113184Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_281.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:37:32.442251Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_281.TXT, 共 242393 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:37:32.442251Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_285.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:38:09.312937Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\05\20170305_285.TXT, 共 242676 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:38:09.312937Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_001.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:38:51.817424Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_001.TXT, 共 243418 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:38:51.817424Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_005.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:39:35.516232Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_005.TXT, 共 242640 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:39:35.517237Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_009.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:40:12.173596Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_009.TXT, 共 241433 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:40:12.173596Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_013.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:40:55.974947Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_013.TXT, 共 240788 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:40:55.974947Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_017.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:41:31.886154Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_017.TXT, 共 239380 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:41:31.886154Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_021.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:42:16.157751Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_021.TXT, 共 238329 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:42:16.158754Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_025.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:43:01.802399Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_025.TXT, 共 237140 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:43:01.802399Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_029.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:43:40.099376Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_029.TXT, 共 235700 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:43:40.099376Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_033.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:44:25.659824Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_033.TXT, 共 235244 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:44:25.660828Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_037.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:45:10.256569Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_037.TXT, 共 234214 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:45:10.256569Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_041.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:45:49.187305Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_041.TXT, 共 232712 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:45:49.187305Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_045.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:46:27.749513Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_045.TXT, 共 232934 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:46:27.749513Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_049.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:47:12.469069Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_049.TXT, 共 232478 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:47:12.469069Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_053.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:48:07.905051Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_053.TXT, 共 231808 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:48:07.905051Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_057.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:48:44.769160Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_057.TXT, 共 232143 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:48:44.769160Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_061.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:49:19.277527Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_061.TXT, 共 232502 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:49:19.277527Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_065.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:50:00.028127Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_065.TXT, 共 233345 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:50:00.028127Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_069.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:50:33.197380Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_069.TXT, 共 233720 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:50:33.197380Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_073.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:51:13.391646Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_073.TXT, 共 235222 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:51:13.392646Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_077.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:52:00.323624Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_077.TXT, 共 236707 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:52:00.323624Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_081.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:52:34.784160Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_081.TXT, 共 238260 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:52:34.784160Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_085.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:53:16.980877Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_085.TXT, 共 240036 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:53:16.980877Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_089.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:53:51.829093Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_089.TXT, 共 240339 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:53:51.829093Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_093.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:54:33.878058Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_093.TXT, 共 240473 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:54:33.878058Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_097.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:55:27.306414Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_097.TXT, 共 241668 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:55:27.306414Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_101.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:56:12.864250Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_101.TXT, 共 240964 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:56:12.864250Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_105.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:56:58.547827Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_105.TXT, 共 241255 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:56:58.547827Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_109.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:57:32.758396Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_109.TXT, 共 241473 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:57:32.758396Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_113.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:58:13.456188Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_113.TXT, 共 241338 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:58:13.456188Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_117.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:58:54.689512Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_117.TXT, 共 241281 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:58:54.689512Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_121.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:59:29.465693Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_121.TXT, 共 242302 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T08:59:29.465693Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_125.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:00:10.674083Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_125.TXT, 共 243081 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:00:10.675083Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_129.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:00:51.543045Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_129.TXT, 共 242081 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:00:51.543045Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_133.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:01:26.451778Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_133.TXT, 共 241849 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:01:26.452803Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_137.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:02:11.253038Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_137.TXT, 共 242050 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:02:11.254041Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_141.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:02:56.608325Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_141.TXT, 共 242105 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:02:56.608325Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_145.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:03:33.060846Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_145.TXT, 共 242133 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:03:33.060846Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_149.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:04:15.526310Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_149.TXT, 共 242271 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:04:15.526310Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_153.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:04:58.162888Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_153.TXT, 共 241531 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:04:58.162888Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_157.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:05:35.130421Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_157.TXT, 共 242112 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:05:35.130421Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_161.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:06:17.858196Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_161.TXT, 共 242700 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:06:17.858699Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_165.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:07:00.855262Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_165.TXT, 共 242622 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:07:00.855262Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_169.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:07:37.724264Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_169.TXT, 共 242477 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:07:37.724264Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_173.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:08:20.504889Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_173.TXT, 共 243161 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:08:20.504889Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_177.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:09:04.101990Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_177.TXT, 共 242719 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:09:04.101990Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_181.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:09:40.855122Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_181.TXT, 共 242850 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:09:40.855122Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_185.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:10:24.155140Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_185.TXT, 共 242890 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:10:24.155140Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_189.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:11:08.996306Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_189.TXT, 共 241984 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:11:08.996306Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_193.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:11:45.051703Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_193.TXT, 共 242675 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:11:45.051703Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_197.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:12:28.402005Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_197.TXT, 共 243122 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:12:28.402005Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_201.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:13:06.104984Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_201.TXT, 共 243008 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:13:06.104984Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_205.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:13:49.676844Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_205.TXT, 共 243244 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:13:49.676844Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_209.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:14:32.338588Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_209.TXT, 共 243581 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:14:32.339588Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_213.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:15:13.304946Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_213.TXT, 共 242050 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:15:13.304946Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_217.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:15:49.219830Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_217.TXT, 共 242411 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:15:49.219830Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_221.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:16:24.478598Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_221.TXT, 共 241664 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:16:24.478598Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_225.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:17:06.477915Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_225.TXT, 共 242185 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:17:06.477915Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_229.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:17:48.860149Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_229.TXT, 共 241338 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:17:48.861149Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_233.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:18:32.146046Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_233.TXT, 共 241506 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:18:32.147046Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_237.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:19:07.881028Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_237.TXT, 共 241894 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:19:07.881028Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_241.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:19:49.375187Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_241.TXT, 共 242954 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:19:49.376187Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_245.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:20:31.010150Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_245.TXT, 共 242797 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:20:31.011150Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_249.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:21:07.115611Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_249.TXT, 共 242178 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:21:07.116113Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_253.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:21:49.539974Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_253.TXT, 共 243356 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:21:49.539974Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_257.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:22:31.456414Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_257.TXT, 共 243790 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:22:31.456414Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_261.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:23:13.563062Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_261.TXT, 共 243840 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:23:13.564062Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_265.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:23:49.164179Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_265.TXT, 共 243634 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:23:49.164179Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_269.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:24:31.412166Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_269.TXT, 共 243322 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:24:31.413167Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_273.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:25:06.953665Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_273.TXT, 共 242608 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:25:06.953665Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_277.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:25:48.816968Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_277.TXT, 共 242718 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:25:48.816968Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_281.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:26:23.917034Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_281.TXT, 共 242172 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:26:23.917034Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_285.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:27:06.033244Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\06\20170306_285.TXT, 共 242349 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:27:06.033244Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_001.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:27:48.290118Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_001.TXT, 共 242379 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:27:48.290118Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_005.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:28:29.987123Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_005.TXT, 共 242445 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:28:29.987123Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_009.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:29:05.722890Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_009.TXT, 共 241390 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:29:05.722890Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_013.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:29:46.853858Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_013.TXT, 共 240160 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:29:46.853971Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_017.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:30:22.279058Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_017.TXT, 共 238971 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:30:22.279058Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_021.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:31:03.057225Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_021.TXT, 共 237632 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:31:03.057225Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_025.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:31:43.819218Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_025.TXT, 共 236785 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:31:43.819218Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_029.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:32:19.606142Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_029.TXT, 共 235803 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:32:19.606142Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_033.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:33:00.377725Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_033.TXT, 共 235908 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:33:00.377725Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_037.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:33:35.673454Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_037.TXT, 共 234077 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:33:35.674454Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_041.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:34:10.386298Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_041.TXT, 共 233423 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:34:10.386298Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_045.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:34:51.170028Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_045.TXT, 共 233175 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:34:51.170028Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_049.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:35:26.326054Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_049.TXT, 共 233080 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:35:26.326054Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_053.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:36:07.342552Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_053.TXT, 共 232671 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:36:07.342552Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_057.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:36:47.288929Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_057.TXT, 共 232341 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:36:47.288929Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_061.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:37:20.664512Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_061.TXT, 共 233016 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:37:20.664512Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_065.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:38:01.446258Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_065.TXT, 共 233197 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:38:01.446258Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_069.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:38:34.701929Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_069.TXT, 共 234125 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:38:34.701929Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_073.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:39:14.737210Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_073.TXT, 共 235529 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:39:14.737210Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_077.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:39:48.824200Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_077.TXT, 共 237098 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:39:48.824200Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_081.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:40:29.539548Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_081.TXT, 共 238456 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:40:29.539548Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_085.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:41:04.464783Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_085.TXT, 共 241196 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:41:04.464783Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_089.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:41:47.119611Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_089.TXT, 共 241507 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:41:47.119894Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_093.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:42:29.183570Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_093.TXT, 共 241670 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:42:29.183570Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_097.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:43:05.512961Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_097.TXT, 共 241745 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:43:05.512961Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_101.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:43:48.038002Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_101.TXT, 共 241722 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:43:48.038002Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_105.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:44:30.316640Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_105.TXT, 共 241661 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:44:30.316640Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_109.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:45:07.507968Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_109.TXT, 共 242038 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:45:07.507968Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_113.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:45:50.588129Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_113.TXT, 共 242722 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:45:50.589130Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_117.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:46:26.717406Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_117.TXT, 共 242095 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:46:26.717406Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_121.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:47:18.621154Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_121.TXT, 共 241939 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:47:18.621154Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_125.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:48:02.282538Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_125.TXT, 共 242146 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:48:02.282538Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_129.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:48:54.345924Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_129.TXT, 共 241437 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:48:54.346924Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_133.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:49:37.302159Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_133.TXT, 共 242109 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:49:37.303159Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_137.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:50:13.486464Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_137.TXT, 共 242058 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:50:13.487465Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_141.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:50:48.688160Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_141.TXT, 共 242273 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:50:48.689160Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_145.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:51:29.974190Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_145.TXT, 共 242275 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:51:29.974190Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_149.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:52:10.780513Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_149.TXT, 共 241982 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:52:10.781514Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_153.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:52:45.273295Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_153.TXT, 共 241561 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:52:45.273295Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_157.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:53:26.270899Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_157.TXT, 共 241823 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:53:26.270899Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_161.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:54:07.051738Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_161.TXT, 共 242888 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:54:07.051738Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_165.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:54:47.468613Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_165.TXT, 共 241912 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:54:47.468613Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_169.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:55:22.598649Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_169.TXT, 共 241858 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:55:22.598649Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_173.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:56:04.863236Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_173.TXT, 共 241843 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:56:04.863236Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_177.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:56:41.996181Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_177.TXT, 共 241656 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:56:41.996181Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_181.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:57:24.064147Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_181.TXT, 共 241828 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:57:24.065148Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_185.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:58:07.224752Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_185.TXT, 共 241666 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:58:07.224752Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_189.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:58:44.203072Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_189.TXT, 共 241807 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:58:44.203072Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_193.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:59:27.358200Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_193.TXT, 共 241274 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T09:59:27.359200Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_197.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:00:03.776972Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_197.TXT, 共 242094 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:00:03.776972Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_201.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:00:45.636920Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_201.TXT, 共 241071 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:00:45.636920Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_205.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:01:21.005872Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_205.TXT, 共 240985 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:01:21.005872Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_209.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:02:01.745508Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_209.TXT, 共 241141 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:02:01.745508Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_213.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:02:37.859028Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_213.TXT, 共 240259 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:02:37.859028Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_217.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:03:17.882325Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_217.TXT, 共 240737 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:03:17.882325Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_221.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:03:58.089085Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_221.TXT, 共 239995 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:03:58.089085Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_225.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:04:32.797448Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_225.TXT, 共 239667 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:04:32.798448Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_229.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:05:13.639977Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_229.TXT, 共 239816 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:05:13.639977Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_233.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:05:48.910020Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_233.TXT, 共 238218 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:05:48.910020Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_237.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:06:29.945614Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_237.TXT, 共 242097 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:06:29.945614Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_241.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:07:04.465787Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_241.TXT, 共 242879 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:07:04.465787Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_245.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:07:45.406107Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_245.TXT, 共 241985 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:07:45.407108Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_249.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:08:19.626435Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_249.TXT, 共 243699 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:08:19.626435Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_253.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:08:54.912794Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_253.TXT, 共 243232 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:08:54.912794Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_257.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:09:35.050261Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_257.TXT, 共 243183 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:09:35.050261Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_261.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:10:15.261585Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_261.TXT, 共 243356 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:10:15.261585Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_265.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:10:58.842316Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_265.TXT, 共 243768 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:10:58.842316Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_269.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:11:48.757667Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_269.TXT, 共 243752 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:11:48.757667Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_273.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:12:48.690788Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_273.TXT, 共 243316 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:12:48.691788Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_277.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:13:41.161799Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_277.TXT, 共 243308 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:13:41.161799Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_281.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:14:21.872206Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_281.TXT, 共 242460 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:14:21.872206Z [info     ] 开始加载文件: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_285.TXT logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:15:10.328642Z [info     ] 文件加载完成: D:\文件\临时文件\交通大数据\gps_datas\07\20170307_285.TXT, 共 242731 行 logger_level=local pipeline_id=traffic_big_data_processor task_name=file_data_loader
+2026-04-18T10:15:10.329642Z [info     ] 扫描完成，共找到 504 个文件 (sample_step=4) logger_level=local pipeline_id=traffic_big_data_processor task_name=file_scanner
+
+Pipeline 'traffic_big_data_processor' 执行完成!
+最终 flush 导出 77 条聚合记录
+
+数据处理完成!
+输出文件: D:\repositories\Roal\examples\traffic_big_data_output.csv
+(venv) PS D:\repositories\Roal\examples>
