@@ -26,7 +26,7 @@
 ## 项目结构
 
 ```plaintext
-Exp4_Taxi_Traffic_Prediction/
+exp4-taxi-traffic-prediction/
 │
 ├── data/ # 原始数据与处理后数据
 │ ├── raw/ # 原始GPS数据
