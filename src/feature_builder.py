@@ -114,7 +114,7 @@ class TimeSeriesFeatureBuilder:
 
         return X_train, y_train, X_val, y_val, X_test, y_test
 
-    def normalize_data(self, X_train, X_val, X_test, y_train, y_val, y_test):
+    def normalize_data(self, X_train, y_train, X_val, y_val, X_test, y_test):
         """
         数据标准化
         """

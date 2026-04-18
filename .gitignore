@@ -66,8 +66,5 @@ Thumbs.db
 # Project specific
 data/raw/*.csv
 data/processed/*.pkl
-results/figures/*.png
-results/figures/*.jpg
-results/figures/*.pdf
 results/metrics/*.json
 results/metrics/*.txt

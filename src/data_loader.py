@@ -75,7 +75,7 @@ class AggregatedData:
 @dataclass
 class LocalConfig:
     """配置类"""
-    data_folder: str = "D:\\文件\\临时文件\\交通大数据\\gps_datas" # DATA_RAW_DIR
+    data_folder: str = DATA_RAW_DIR # 使用config.py中定义的原始数据路径
     output_file: str = os.path.join(DATA_PROCESSED_DIR, "aggregated_traffic_data.csv")
     shuffle_spill_dir: str = os.path.join(TEMP_DIR, "shuffle_temp")
     file_encoding: str = 'gbk'

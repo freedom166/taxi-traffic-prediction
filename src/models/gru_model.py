@@ -1,12 +1,12 @@
 """
-LSTM神经网络模型用于交通预测
+GRU神经网络模型用于交通预测
 """
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense, Dropout, Input
+from tensorflow.keras.layers import GRU, Dense, Dropout, Input
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from tensorflow.keras.optimizers import Adam
 from sklearn.metrics import mean_absolute_error, mean_squared_error
@@ -27,12 +27,12 @@ np.random.seed(RANDOM_SEED)
 tf.random.set_seed(RANDOM_SEED)
 
 
-class LSTMPredictor:
-    """LSTM交通预测模型"""
+class GRUPredictor:
+    """GRU交通预测模型"""
 
     def __init__(self, input_shape, config=LSTM_CONFIG):
         """
-        初始化LSTM模型
+        初始化GRU模型
 
         Parameters:
         -----------
@@ -46,23 +46,23 @@ class LSTMPredictor:
 
     def build_model(self):
         """
-        构建LSTM网络结构
+        构建GRU网络结构
         """
         model = Sequential()
 
         # 输入层
         model.add(Input(shape=self.input_shape))
 
-        # 第一层LSTM
-        model.add(LSTM(
+        # 第一层GRU
+        model.add(GRU(
             units=self.config['lstm_units'][0],
             return_sequences=True,
             activation='tanh'
         ))
         model.add(Dropout(self.config['dropout_rate']))
 
-        # 第二层LSTM
-        model.add(LSTM(
+        # 第二层GRU
+        model.add(GRU(
             units=self.config['lstm_units'][1],
             return_sequences=False,
             activation='tanh'
@@ -85,10 +85,10 @@ class LSTMPredictor:
 
         return model
 
-    def prepare_lstm_data(self, X, y):
+    def prepare_gru_data(self, X, y):
         """
-        为LSTM准备数据格式
-        LSTM期望输入形状: (samples, timesteps, features)
+        为GRU准备数据格式
+        GRU期望输入形状: (samples, timesteps, features)
         """
         # X已经是 (samples, timesteps) 格式
         # 需要重塑为 (samples, timesteps, features=1)
@@ -98,11 +98,11 @@ class LSTMPredictor:
 
     def train(self, X_train, y_train, X_val, y_val):
         """
-        训练LSTM模型
+        训练GRU模型
         """
         # 准备数据
-        X_train_lstm, y_train_lstm = self.prepare_lstm_data(X_train, y_train)
-        X_val_lstm, y_val_lstm = self.prepare_lstm_data(X_val, y_val)
+        X_train_gru, y_train_gru = self.prepare_gru_data(X_train, y_train)
+        X_val_gru, y_val_gru = self.prepare_gru_data(X_val, y_val)
 
         # 回调函数
         callbacks = [
@@ -113,7 +113,7 @@ class LSTMPredictor:
                 verbose=1
             ),
             ModelCheckpoint(
-                filepath=f'{METRICS_DIR}/lstm_best_model.keras',
+                filepath=f'{METRICS_DIR}/gru_best_model.keras',
                 monitor='val_loss',
                 save_best_only=True,
                 verbose=0
@@ -122,12 +122,12 @@ class LSTMPredictor:
 
         # 训练模型
         print("=" * 50)
-        print("开始训练LSTM模型...")
+        print("开始训练GRU模型...")
         print("=" * 50)
 
         self.history = self.model.fit(
-            X_train_lstm, y_train_lstm,
-            validation_data=(X_val_lstm, y_val_lstm),
+            X_train_gru, y_train_gru,
+            validation_data=(X_val_gru, y_val_gru),
             epochs=self.config['epochs'],
             batch_size=self.config['batch_size'],
             callbacks=callbacks,
@@ -140,8 +140,8 @@ class LSTMPredictor:
         """
         使用训练好的模型进行预测
         """
-        X_lstm, _ = self.prepare_lstm_data(X, np.zeros(len(X)))
-        predictions = self.model.predict(X_lstm, verbose=0)
+        X_gru, _ = self.prepare_gru_data(X, np.zeros(len(X)))
+        predictions = self.model.predict(X_gru, verbose=0)
         return predictions.flatten()
 
     def plot_training_history(self):
@@ -159,7 +159,7 @@ class LSTMPredictor:
         axes[0].plot(self.history.history['val_loss'], label='Val Loss', linewidth=2)
         axes[0].set_xlabel('Epoch', fontsize=12)
         axes[0].set_ylabel('Loss (MSE)', fontsize=12)
-        axes[0].set_title('LSTM Training Loss', fontsize=14)
+        axes[0].set_title('GRU Training Loss', fontsize=14)
         axes[0].legend()
         axes[0].grid(True, alpha=0.3)
 
@@ -168,12 +168,12 @@ class LSTMPredictor:
         axes[1].plot(self.history.history['val_mae'], label='Val MAE', linewidth=2)
         axes[1].set_xlabel('Epoch', fontsize=12)
         axes[1].set_ylabel('MAE', fontsize=12)
-        axes[1].set_title('LSTM Training MAE', fontsize=14)
+        axes[1].set_title('GRU Training MAE', fontsize=14)
         axes[1].legend()
         axes[1].grid(True, alpha=0.3)
 
         plt.tight_layout()
-        plt.savefig(f'{FIGURES_DIR}/lstm_training_history.png', dpi=150, bbox_inches='tight')
+        plt.savefig(f'{FIGURES_DIR}/gru_training_history.png', dpi=150, bbox_inches='tight')
         plt.show()
 
     def evaluate(self, y_true, y_pred, y_scaler=None):
@@ -199,7 +199,7 @@ class LSTMPredictor:
         }
 
         print("\n" + "=" * 50)
-        print("LSTM模型评估结果:")
+        print("GRU模型评估结果:")
         print("=" * 50)
         print(f"MAE:  {mae:.4f}")
         print(f"MSE:  {mse:.4f}")
@@ -207,7 +207,7 @@ class LSTMPredictor:
 
         return metrics
 
-    def plot_predictions(self, y_true, y_pred, title="LSTM Predictions vs True Values"):
+    def plot_predictions(self, y_true, y_pred, title="GRU Predictions vs True Values"):
         """
         绘制预测值与真实值对比图
         """
@@ -225,25 +225,25 @@ class LSTMPredictor:
         plt.grid(True, alpha=0.3)
 
         plt.tight_layout()
-        plt.savefig(f'{FIGURES_DIR}/lstm_predictions.png', dpi=150, bbox_inches='tight')
+        plt.savefig(f'{FIGURES_DIR}/gru_predictions.png', dpi=150, bbox_inches='tight')
         plt.show()
 
 
-def run_lstm_experiment():
+def run_gru_experiment():
     """
-    运行完整的LSTM实验流程
+    运行完整的GRU实验流程
     """
     import sys
     import os
     from contextlib import redirect_stdout
     
     # 保存训练日志到outputs目录
-    log_file = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 'outputs', 'lstm_model.output')
+    log_file = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 'outputs', 'gru_model.output')
     
     with open(log_file, 'w') as f:
         with redirect_stdout(f):
             print("\n" + "=" * 60)
-            print("LSTM交通预测实验")
+            print("GRU交通预测实验")
             print("=" * 60)
 
             # 1. 加载数据
@@ -266,31 +266,29 @@ def run_lstm_experiment():
              X_test_scaled, y_test_scaled,
              X_scaler, y_scaler) = builder.normalize_data(X_train, y_train, X_val, y_val, X_test, y_test)
 
-            # 5. 构建LSTM模型
-            lstm = LSTMPredictor(input_shape=(X_train_scaled.shape[1], 1))
-            lstm.build_model()
+            # 5. 构建GRU模型
+            gru = GRUPredictor(input_shape=(X_train_scaled.shape[1], 1))
+            gru.build_model()
 
             # 6. 训练模型
-            lstm.train(X_train_scaled, y_train_scaled, X_val_scaled, y_val_scaled)
+            gru.train(X_train_scaled, y_train_scaled, X_val_scaled, y_val_scaled)
 
             # 7. 绘制训练曲线
-            lstm.plot_training_history()
+            gru.plot_training_history()
 
             # 8. 预测
-            y_pred_scaled = lstm.predict(X_test_scaled)
+            y_pred_scaled = gru.predict(X_test_scaled)
 
             # 9. 评估
-            metrics = lstm.evaluate(y_test_scaled, y_pred_scaled, y_scaler)
+            metrics = gru.evaluate(y_test_scaled, y_pred_scaled, y_scaler)
 
             # 10. 绘制预测对比图
             y_test_original = y_scaler.inverse_transform(y_test_scaled.reshape(-1, 1)).flatten()
             y_pred_original = y_scaler.inverse_transform(y_pred_scaled.reshape(-1, 1)).flatten()
-            lstm.plot_predictions(y_test_original, y_pred_original)
+            gru.plot_predictions(y_test_original, y_pred_original)
 
     return metrics, y_test_original, y_pred_original
 
 
 if __name__ == "__main__":
-    from config import DATA_PROCESSED_DIR
-
-    metrics, y_true, y_pred = run_lstm_experiment()
+    metrics, y_true, y_pred = run_gru_experiment()
